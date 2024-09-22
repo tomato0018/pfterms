@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Perfume Data</title>
+<style>
+* {
+    box-sizing: border-box;
+}
+body {
+    font-size: 28px;
+header {
+    background-color: #e0e0e0;
+    padding: 30px;
+    text-align: center;
+    color: #04AA6D;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #e0e0e0;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: #111;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: darkgray;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+nav {
+    float: left;
+    width: 30%;
+    height: fit-content;
+    background: #e0e0e0;
+    padding: 20px;
+}
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+    padding: 0px;
+    width: 70%;
+    background-color: white;
+    height: auto;
+}
+
+section::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+footer {
+    background-color: #e0e0e0;
+    padding: 10px;
+    text-align: center;
+    color: #111;
+}
+@media (max-width: 600px) {
+    nav, article {
+        width: 100%;
+        height: auto;
+    }
+}
+table, th, td {
+              border: 1px solid grey;
+              border-collapse: collapse;
+}
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Perfume Metadata</h1>
+</header>
+
+<ul>
+  <li><a href="Main.html">Home</a></li>
+  <li><a href="Terms.html">Terms</a></li>
+  <li><a class="active" href="Example.html">Example</a></li>
+</ul>
+
+<article>
+    <h4>Example: Creed, Silver Mountain 50ml</h4>
+    <div>
+    <img src="Creed_SilverMountain_50ml.jpg" alt="Creed_SilverMountain_50ml" width="300" height="300">
+    </div>
+    <table>
+        <tr>
+            <th>제품명</th>
+            <td>Silver Mountain Water</td>
+        </tr>
+        <tr>
+            <th>제조사</th>
+            <td>Creed</td>
+        </tr>
+        <tr>
+            <th>제조국</th>
+            <td>France</td>
+        </tr>
+        <tr>
+            <th>창작자</th>
+            <td>unknown</td>
+        </tr>
+        <tr>
+            <th>유형</th>
+            <td>액체 향수</td>
+        </tr>
+        <tr>
+            <th>설명</th>
+            <td>A cool, clean and mentholated fragrance, Silver Mountain Water is reminiscent of sparkling icy streams <br>coursing through the snow-capped Swiss Alps.</td>
+        </tr>
+        <tr>
+            <th>용량</th>
+            <td>50ml</td>
+        </tr>
+    </table>
+</article>
+</body>
+</html>

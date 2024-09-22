@@ -82,9 +82,36 @@ footer {
         height: auto;
     }
 }
-table, th, td {
-              border: 1px solid grey;
-              border-collapse: collapse;
+table {
+            border-collapse: collapse;
+            width: 100%;
+            font-family: Arial;
+            font-size: medium;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+.CellwithComment{
+    position: relative;
+}
+.CellComment{
+    display: none;
+    position: absolute;
+    z-index: 100;
+    border: 1px gray;
+    background-color: #e0e0e0;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #ddd;
+    padding: 3px;
+    color: #ddd;
+    top: 20px;
+    left: 20px;
+}
+.CellwithComment:hover span.CellComment {
+    display: block;    
 }
 </style>
 </head>
@@ -102,37 +129,85 @@ table, th, td {
 
 <article>
     <h4>Example: Creed, Silver Mountain 50ml</h4>
-    <div>
     <img src="Creed_SilverMountain_50ml.jpg" alt="Creed_SilverMountain_50ml" width="300" height="300">
-    </div>
     <table>
         <tr>
-            <th>제품명</th>
+            <th class="CellWithComment">Name<br>제품명
+                <span class="CellComment">GoodRelations</span>
+            </th>
             <td>Silver Mountain Water</td>
         </tr>
         <tr>
-            <th>제조사</th>
+            <th title="Product Vocabulary">Brand<br>제조사</th>
             <td>Creed</td>
         </tr>
         <tr>
-            <th>제조국</th>
+            <th title="DCMI Metadata Terms">Location<br>제조국</th>
             <td>France</td>
         </tr>
         <tr>
-            <th>창작자</th>
-            <td>unknown</td>
+            <th title="Creator">Creator<br>창작자</th>
+            <td>empty</td>
         </tr>
         <tr>
-            <th>유형</th>
+            <th title="DCMI Metadata Terms">Physical Resource<br>유형</th>
             <td>액체 향수</td>
         </tr>
         <tr>
-            <th>설명</th>
-            <td>A cool, clean and mentholated fragrance, Silver Mountain Water is reminiscent of sparkling icy streams <br>coursing through the snow-capped Swiss Alps.</td>
+            <th title="Product Vocabulary">Description<br>설명</th>
+            <td>A cool, clean and mentholated fragrance, Silver Mountain Water is reminiscent of sparkling icy streams coursing through the snow-capped Swiss Alps.</td>
         </tr>
         <tr>
-            <th>용량</th>
+            <th title="Perfume Terms">Volume<br>용량</th>
             <td>50ml</td>
+        </tr>
+        <tr>
+            <th title="Product Vocabulary">has target<br>대상</th>
+            <td>남성</td>
+        </tr>
+        <tr>
+            <th title="DCMI Metadata Terms">Physical Medium<br>용기 재질</th>
+            <td>(empty)</td>
+        </tr>
+        <tr>
+            <th title="Perfume Terms">Container Shape<br>용기 형태</th>
+            <td>(empty)</td>
+        </tr>
+        <tr>
+            <th title="Perfume Terms">Cap Medium<br>마개 재질</th>
+            <td>Silver</td>
+        </tr>
+        <tr>
+            <th title="Perfume Terms">Cap Shape<br>마개 형태</th>
+            <td>옆라인이 일자인 부채꼴 모양</td>
+        </tr>
+        <tr>
+            <th title="Perfume Terms">Fragrance composition<br>향 구성</th>
+            <td>Top Notes: Bergamot, Blackcurrant, Galbanum, Orange<br>Middle Notes: Tea, Ozonic Accord<br>Base Note: Musk, Sandalwood</td>
+        </tr>
+        <tr>
+            <th title="Perfume Terms">Duration<br>지속력</th>
+            <td>3~5시간</td>
+        </tr>
+        <tr>
+            <th title="DCMI Metadata Terms">Period of Time<br>사용기한</th>
+            <td>제조일자로부터 3년</td>
+        </tr>
+        <tr>
+            <th title="Perfume Terms">How to Use<br>사용방법</th>
+            <td>맥박이 뛰는 부위에 분사하여 사용함</td>
+        </tr>
+        <tr>
+            <th title="Perfume Terms">Ingredients<br>성분</th>
+            <td>에탄올, 향료, 정제수, 리모넨, 에칠헥실메톡시신나메이트, 부틸메톡시디벤조일메탄, 에칠헥실살리실레이트, 리날룰, 부틸페닐메틸프로피오날,알파-아이소메틸아이오논,시트랄, 쿠마린</td>
+        </tr>
+        <tr>
+            <th title="GoodRelations">Price Specification<br>가격</th>
+            <td>$345(50ml 기준)</td>
+        </tr>
+        <tr>
+            <th title="DCMI Metadata terms">Source<br>공식 구매처</th>
+            <td>https://creedboutique.com/products/silver-mountain-water?variant=31459281895521</td>
         </tr>
     </table>
 </article>

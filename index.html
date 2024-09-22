@@ -82,9 +82,36 @@ footer {
         height: auto;
     }
 }
-table, th, td {
-              border: 1px solid black;
-              border-collapse: collapse;
+table {
+            border-collapse: collapse;
+            width: 100%;
+            font-family: Arial;
+            font-size: medium;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+.CellwithComment{
+    position: relative;
+}
+.CellComment{
+    display: none;
+    position: absolute;
+    z-index: 100;
+    border: 1px gray;
+    background-color: #e0e0e0;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #ddd;
+    padding: 3px;
+    color: #ddd;
+    top: 20px;
+    left: 20px;
+}
+.CellwithComment:hover span.CellComment {
+    display: block;    
 }
 </style>
 </head>
